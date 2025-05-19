@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game.com</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">Game.com</a>
+      <button class="menu-toggle" aria-label="メニュー開閉">
+       <span class="bar"></span>  
+      </button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="blog.html">記事一覧</a></li>
+          <li><a href="products-mouse.html">マウス</a></li>
+          <li><a href="products-mousepad.html">マウスパッド</a></li>
+          <li><a href="products-keyboard.html">キーボード</a></li>
+          <li><a href="products-monitor.html">モニター</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="slideshow-container">
+      <!-- スライド画像 -->
+      <div class="slide fade">
+        <img src="assets/images/slide_imgs/slide1.jpg" alt="Slide 1">
+      </div>
+      <div class="slide fade">
+        <img src="assets/images/slide_imgs/slide2.jpg" alt="Slide 2">
+      </div>
+      <div class="slide fade">
+        <img src="assets/images/slide_imgs/slide3.jpg" alt="Slide 3">
+      </div>
+      <div class="slide fade">
+        <img src="assets/images/slide_imgs/slide4.jpg" alt="Slide 4">
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1>あなたのゲームライフをアップグレード</h1>
+      <p>最新ガジェットを厳選レビュー</p>
+      <a href="products-mouse.html" class="btn-primary">おすすめデバイスを見る</a>
+    </div>
+  </section>
+
+  <!-- カテゴリジャンプリンク -->
+  <section class="category-nav">
+    <ul>
+      <li>
+        <a href="products-mouse.html">
+          <img src="assets/images/icons/mouse.png" alt="Mouse">
+          <span>マウス</span>
+        </a>
+      </li>
+      <li>
+        <a href="products-keyboard.html">
+          <img src="assets/images/icons/keyboard.png" alt="Keyboard">
+          <span>キーボード</span>
+        </a>
+      </li>
+      <li>
+        <a href="products-mousepad.html">
+          <img src="assets/images/icons/mousepad.png" alt="Mousepad">
+          <span>マウスパッド</span>
+        </a>
+      </li>
+      <li>
+        <a href="products-monitor.html">
+          <img src="assets/images/icons/monitor.png" alt="Monitor">
+          <span>モニター</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- おすすめ記事セクション -->
+  <section class="recommended-section">
+    <h2>おすすめ記事</h2>
+    <div id="recommended-articles" class="recommended-articles">
+      <!-- JSでランダムな記事3件を挿入 -->
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="blog.html">記事一覧</a>
+      <a href="products-mouse.html">マウス</a>
+      <a href="products-mousepad.html">マウスパッド</a>
+      <a href="products-keyboard.html">キーボード</a>
+      <a href="products-monitor.html">モニター</a>
+    </nav>
+    <div class="footer-policy">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <p class="affiliate-disclaimer">当サイトはAmazonアソシエイトプログラムを利用しています。</p>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="X">
+        <img src="assets/images/icons/x.png" alt="X">
+      </a>
+      <a href="#" aria-label="YouTube">
+        <img src="assets/images/icons/youtube.png" alt="YouTube">
+      </a>
+      <a href="#" aria-label="Discord">
+        <img src="assets/images/icons/discord.png" alt="Discord">
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <button class="to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">▲ ページトップへ</button>
+      <p>© 2025 Game.com All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- スクリプト読み込み -->
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/recommend.js"></script>
+</body>
+</html>

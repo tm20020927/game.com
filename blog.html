@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>記事一覧 | Game.com</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="site-logo">Game.com</a>
+      <button class="menu-toggle" aria-label="メニュー開閉">
+        <span class="bar"></span>
+      </button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="blog.html">記事一覧</a></li>
+          <li><a href="products-mouse.html">マウス</a></li>
+          <li><a href="products-mousepad.html">マウスパッド</a></li>
+          <li><a href="products-keyboard.html">キーボード</a></li>
+          <li><a href="products-monitor.html">モニター</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 本文 -->
+  <main class="blog-page">
+    <h1>おすすめ記事</h1>
+    <section class="post-list">
+      <!-- js/blog.js がここに .post-card 要素を動的に挿入します -->
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="blog.html">記事一覧</a>
+      <a href="products-mouse.html">マウス</a>
+      <a href="products-mousepad.html">マウスパッド</a>
+      <a href="products-keyboard.html">キーボード</a>
+      <a href="products-monitor.html">モニター</a>
+    </nav>
+    <div class="footer-policy">
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <p class="affiliate-disclaimer">当サイトはAmazonアソシエイトプログラムを利用しています。</p>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="X"><img src="assets/images/icons/x.png" alt="X"></a>
+      <a href="#" aria-label="YouTube"><img src="assets/images/icons/youtube.png" alt="YouTube"></a>
+      <a href="#" aria-label="Discord"><img src="assets/images/icons/discord.png" alt="Discord"></a>
+    </div>
+    <div class="footer-bottom">
+      <button class="to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        ▲ ページトップへ
+      </button>
+      <p>© 2025 Game.com All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- スクリプト読み込み -->
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
